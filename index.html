@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+
+</head>
+<body class="max-w-full mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
+  <nav class="mx-auto p-4 bg-amber-400">
+    <div class="container mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between relative">
+      
+      <!-- Logo Section -->
+      <a href="/" class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 z-50 lg:static lg:mr-8">
+        <img src="logo.svg" class="w-48 md:w-64 lg:w-72" alt="Home Smart Logo">
+      </a>
+      
+      <!-- Menu Items Section -->
+      <div id="menu-items" 
+        class="hidden lg:flex flex-col lg:flex-row gap-4 absolute lg:static top-16 left-0 right-0 bg-amber-400 shadow-xl lg:shadow-none text-center text-lg p-6 lg:p-0 lg:w-auto items-center justify-center">
+        
+        <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" href="/">Home</a>
+
+        <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" href="/contact">Contact</a>
+
+        <a role="menuitem" class="py-2 px-6 bg-teal-900 text-white shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400" href="/login">Login</a>
+
+        <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" href="/sign-up">Sign Up</a>
+      </div>
+      
+      <!-- Hamburger Menu Button -->
+      <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors absolute right-4 top-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <header class="relative pt-16 md:pt-24 lg:pt-48">
+    <div class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 z-0 bg-gradient-to-b from-amber-400 to-amber-600"></div>
+  
+    <div class="relative container mx-auto z-10">
+      <img src="couch.png" alt="couch" class="mx-auto w-full sm:w-2/3 md:w-2/3 lg:w-1/3">
+    </div>
+  </header>
+   
+   
+  <div class="flex justify-center items-center bg-amber-100 dark:bg-amber-800 p-2 rounded-lg shadow-lg mx-auto max-w-sm">
+    <button class="bg-amber-500 hover:bg-amber-600 text-white rounded-full border-2 border-amber-700 p-1 mr-4">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+      </svg>
+    </button>
+    <a href="#" class="text-amber-600 dark:text-amber-300 font-semibold">Download Now</a>
+  </div>
+        <!-- small logo section -->
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-8 p-6 bg-amber-100 dark:bg-amber-800 rounded-lg shadow-lg max-w-5xl mx-auto mt-6">
+  
+          <!-- First Icon Section -->
+          <div class="flex flex-col items-center text-center text-gray-800 dark:text-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-amber-600 dark:text-amber-400 mb-4">
+              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+            </svg>
+            <p class="font-semibold text-lg">Right Product, Every Time</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-2 max-w-sm">We carefully curate products that guarantee value and satisfaction. Choose with confidence.</p>
+          </div>
+        
+          <!-- Second Icon Section -->
+          <div class="flex flex-col items-center text-center text-gray-800 dark:text-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-amber-600 dark:text-amber-400 mb-4">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+            </svg>
+            <p class="font-semibold text-lg">4.7 Global Rating</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-2 max-w-sm">Our products are trusted by thousands worldwide. Join a community that believes in quality and satisfaction.</p>
+          </div>
+        
+          <!-- Third Icon Section -->
+          <div class="flex flex-col items-center text-center text-gray-800 dark:text-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-amber-600 dark:text-amber-400 mb-4">
+              <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" />
+            </svg>
+            <p class="font-semibold text-lg"> Quality Guarante</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-2 max-w-sm">We value your money. Our products come with a guarantee of satisfaction and exceptional quality.</p>
+          </div>
+        
+        </div>
+        <!-- patner section -->
+        <div class="text-center mt-6 bg-amber-200 py-6">
+          <p class="font-bold text-amber-900">Our Partners</p>
+      </div>
+      
+      <div class="flex flex-wrap justify-center gap-8 mt-6 bg-amber-50 py-6">
+          <div class="flex justify-center items-center shadow-md hover:shadow-lg hover:shadow-amber-500/50 dark:hover:shadow-gray-700 transition-shadow duration-300">
+          
+              <img src="images1 (1).png" class="max-w-[200px] md:max-w-[250px] lg:max-w-[300px]">
+          </div>
+          <div class="flex justify-center items-center shadow-md hover:shadow-lg hover:shadow-amber-500/50 dark:hover:shadow-gray-700 transition-shadow duration-300">
+              <img src="images2.jpg" class="max-w-[200px] md:max-w-[250px] lg:max-w-[300px]">
+          </div>
+          <div class="flex justify-center items-center shadow-md hover:shadow-lg hover:shadow-amber-500/50 dark:hover:shadow-gray-700 transition-shadow duration-300">
+              <img src="images3.png" class="max-w-[200px] md:max-w-[250px] lg:max-w-[300px]">
+          </div>
+          <div class="flex justify-center items-center shadow-md hover:shadow-lg hover:shadow-amber-500/50 dark:hover:shadow-gray-700 transition-shadow duration-300">
+              <img src="images5.jpg" class="max-w-[200px] md:max-w-[250px] lg:max-w-[300px]">
+          </div>
+          <div class="flex justify-center items-center shadow-md hover:shadow-lg hover:shadow-amber-500/50 dark:hover:shadow-gray-700 transition-shadow duration-300">
+              <img src="armchair-small4.webp" class="max-w-[200px] md:max-w-[250px] lg:max-w-[300px]">
+          </div>
+      </div>
+
+      <!-- form section -->
+      <div class="min-h-screen flex items-center justify-center bg-amber-50 dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-wrap items-center justify-center lg:justify-between lg:items-start">
+                <!-- Image Section -->
+                <div class="w-full lg:w-1/2 flex flex-col items-center mb-8 lg:mb-0">
+                    <img 
+                        src="hanging-lamp-with-chain-vintage-color-engraving-illustration-poster-web-isolated-white-background_171932-1561.avif" 
+                        alt="Hanging Lamp" 
+                        class="max-w-full h-auto rounded-lg shadow-lg md:max-w-sm"
+                    />
+                    <p class="mt-4 text-gray-700 dark:text-gray-300 text-lg  md:text-2xl text-center hidden md:block">
+                        "Your home is a reflection of your soul; make it a place of comfort and beauty."
+                    </p>
+                </div>
+    
+                <!-- Form Section -->
+                <div class="w-full lg:w-1/2 bg-amber-50 dark:bg-gray-800 py-12 px-6 sm:px-8 md:px-12 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-amber-900 dark:text-amber-300 mb-6 text-center">Let's Connect</h2>
+                    <form class="w-full max-w-lg bg-white dark:bg-gray-700 shadow-md rounded-lg p-8 mx-auto">
+                        <!-- Name Field -->
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Enter your name" 
+                                class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                            />
+                        </div>
+    
+                        <!-- Email Field -->
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email ID</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                placeholder="Enter your email" 
+                                class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                            />
+                        </div>
+    
+                        <!-- Message Field -->
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Anything You Can Ask</label>
+                            <textarea 
+                                id="message" 
+                                placeholder="Write your message here" 
+                                rows="4" 
+                                class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                            ></textarea>
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button 
+                                type="submit" 
+                                class="w-full bg-amber-400 hover:bg-amber-500 text-white font-medium py-2 px-4 rounded-lg transition duration-300"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+  <!-- JavaScript to Toggle Menu -->
+  <script>
+    const menuButton = document.getElementById('menu');
+    const menuItems = document.getElementById('menu-items');
+    menuButton.addEventListener('click', () => {
+      menuItems.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
