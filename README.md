@@ -1,2 +1,2 @@
 # Landing-Page
-Landing Page using tailwind css by atharv.
+Landing Page using tailwind cascading style sheets.
